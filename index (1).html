@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAI São Paulo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro">
+      <img class="logo" src="./img/WhatsApp Image 2024-06-13 at 15.13.27 (1).jpeg" alt="Facebook">
+      <h2>O Senai ajuda você aprender e compartilhar conhecimento com as pessoas que fazem parte da sua vida.</h2>
+    </div>
+    <div>
+      	<form name="" method="POST" action="./finalizando.php">
+        <input type="text" class="form-control" name="email" placeholder="Login">
+        <input type="password" class="form-control" name="senha" placeholder="Senha">
+        <button class="entrar">Entrar</button>
+        <a href="#">Esqueceu a senha?</a>
+      </form>
+      <p><a href="#">Agendamento de salas </a></p>
+    </div>
+  </div>
+  <footer>Senai © <span id="year"></span></footer>
+  <script>
+    const year = document.getElementById('year');
+    const actualYear = new Date();
+
+    year.innerHTML = actualYear.getFullYear();
+  </script>
+</body>
+
+</html>
